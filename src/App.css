@@ -8,8 +8,19 @@
   align-items: stretch;
 }
 
+pre {
+  text-align: initial;
+}
+
 .read-the-docs {
   color: #888;
+}
+
+.nav {
+  padding: 0 2rem 2rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .header {
@@ -39,4 +50,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.text-inp {
+  width: 100%;
 }

@@ -9,6 +9,7 @@ lerna-debug.log*
 
 node_modules
 dist
+repo-collab-auto
 dist-ssr
 *.local
 

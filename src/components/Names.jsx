@@ -1,6 +1,7 @@
-export default function Names({ names = [], setNames = () => {} }) {
+export default function Names({ title = "", names = [], setNames = () => {} }) {
   return (
     <fieldset className="names">
+      <legend>{title}</legend>
       {names.map((name, index) => (
         <div
           key={index}
@@ -8,6 +9,7 @@ export default function Names({ names = [], setNames = () => {} }) {
           <input
             type="text"
             className="name-inp"
+            placeholder={title + " name"}
             required
             value={name}
             onChange={(e) => setNames((n) => n.toSpliced(index, 1, e.target.value))}
